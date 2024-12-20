@@ -25,7 +25,7 @@ collections:
     item_label: aew,wrestling
     radarr_folder: "/data/media/movies/wrestling"
     filters:
-      year.gte: 2022
+      year.gte: 2024
     url_poster: https://i.imgur.com/Q3gZvGl.jpeg
     radarr_add_missing: true
   WWE PPV:
@@ -40,6 +40,6 @@ collections:
     item_label: wwe,wrestling
     radarr_folder: "/data/media/movies/wrestling"
     filters:
-      year.gte: 2022
+      year.gte: 2024
     url_poster: https://i.imgur.com/3eNUU6q.jpeg
     radarr_add_missing: true
