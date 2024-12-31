@@ -30,6 +30,8 @@ collections:
       duration.gte: 50
       tmdb_title.not:
         - "Zero Hour"
+        - "Buy In"
+        - "Buy-In"
     url_poster: https://i.imgur.com/Q3gZvGl.jpeg
     radarr_add_missing: true
   WWE PPV:
