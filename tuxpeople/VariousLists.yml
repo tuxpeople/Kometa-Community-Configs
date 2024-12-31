@@ -27,6 +27,7 @@ collections:
     radarr_folder: "/data/media/movies/wrestling"
     filters:
       year.gte: 2024
+      tmdb_year.gte: 2024
       duration.gte: 50
       tmdb_title.not:
         - "Zero Hour"
