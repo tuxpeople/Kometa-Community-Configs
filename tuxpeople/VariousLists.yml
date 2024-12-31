@@ -22,10 +22,13 @@ collections:
       - https://www.imdb.com/list/ls523574560/
       - https://www.imdb.com/list/ls509051450/
       - https://www.imdb.com/list/ls566701386/
+    tmdb_company: 119828
     item_label: aew,wrestling
     radarr_folder: "/data/media/movies/wrestling"
     filters:
       year.gte: 2024
+      duration.gte: 50
+      tmdb_title.not: "Zero Hour"
     url_poster: https://i.imgur.com/Q3gZvGl.jpeg
     radarr_add_missing: true
   WWE PPV:
