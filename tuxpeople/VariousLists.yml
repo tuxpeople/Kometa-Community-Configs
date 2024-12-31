@@ -28,8 +28,6 @@ collections:
     filters:
       year.gte: 2024
       duration.gte: 50
-      title.not:
-        - "Zero Hour"
     url_poster: https://i.imgur.com/Q3gZvGl.jpeg
     radarr_add_missing: true
   WWE PPV:
