@@ -55,8 +55,11 @@ libraries: # This is called out once within the config.yml file
       # - git: tuxpeople/VariousLists
     - repo: collections/charts/charts
     - repo: collections/holidays/holidays
-    - repo: playlists/playlists
+    - repo: collections/sports/wrestling
     - repo: collections/various/various_lists
+    - repo: playlists/actors/actors
+    - repo: playlists/franchises/franchises
+    - repo: playlists/genres/genres
 
     overlay_files:
     - remove_overlays: false   # Set this to true to remove all overlays
