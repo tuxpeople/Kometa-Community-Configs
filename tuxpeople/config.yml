@@ -68,8 +68,8 @@ libraries: # This is called out once within the config.yml file
           use_letterboxd: false # Deaktiviert - Letterboxd kann keine TMDb IDs mehr scrapen (Seitenstruktur geändert)
       - default: commonsense
 
-    metadata_path:
-      - git: ladywhiskers/metadata_folders/mediux_stargate
+    metadata_files:
+      # - git: ladywhiskers/metadata_folders/mediux_stargate
       - repo: metadata/german_metadata
 
     settings:
