@@ -14,13 +14,12 @@ collections:
       - https://www.imdb.com/list/ls560016464/
       - https://www.imdb.com/list/ls523574560/
       - https://www.imdb.com/list/ls509051450/
-    #  - https://www.imdb.com/list/ls566701386/
+      - https://www.imdb.com/list/ls501229163/  # Top Rated AEW PPVs
     tmdb_company: 119828
     item_label: aew,wrestling
     radarr_folder: "/data/media/movies/wrestling"
     filters:
-      year.gte: 2025
-      tmdb_year.gte: 2025
+      year.gte: 2019  # AEW started in 2019
       duration.gte: 50
       tmdb_title.not:
         - "Zero Hour"
@@ -37,9 +36,11 @@ collections:
       - https://www.imdb.com/list/ls523039717/
       - https://www.imdb.com/list/ls538431085/
       - https://www.imdb.com/list/ls021456885/
+      - https://www.imdb.com/list/ls045736258/  # Top Rated WWE PPVs
     item_label: wwe,wrestling
     radarr_folder: "/data/media/movies/wrestling"
     filters:
-      year.gte: 2025
+      year.gte: 2020  # Modern WWE era
+      duration.gte: 50
     url_poster: https://i.imgur.com/3eNUU6q.jpeg
     radarr_add_missing: true
