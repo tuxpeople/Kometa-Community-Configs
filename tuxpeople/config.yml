@@ -53,10 +53,10 @@ libraries: # This is called out once within the config.yml file
       # - git: tuxpeople/Holidays
       # - git: tuxpeople/Playlists
       # - git: tuxpeople/VariousLists
-    - repo: Charts
-    - repo: Holidays
-    - repo: Playlists
-    - repo: VariousLists
+    - repo: collections/charts/charts
+    - repo: collections/holidays/holidays
+    - repo: playlists/playlists
+    - repo: collections/various/various_lists
 
     overlay_files:
     - remove_overlays: false   # Set this to true to remove all overlays
@@ -67,7 +67,7 @@ libraries: # This is called out once within the config.yml file
 
     metadata_path:
     - git: ladywhiskers/metadata_folders/mediux_stargate
-    - repo: german_metadata
+    - repo: metadata/german_metadata
 
     settings:
       asset_directory: config/assets/Filme/
@@ -102,7 +102,7 @@ libraries: # This is called out once within the config.yml file
       # - default: network # Disney Channel, Lifetime
       # - default: streaming # Disney+ Movies, Max Shows
       # - default: studio # DreamWorks Studios, Walt Disney Pictures
-    - repo: tv_collections
+    - repo: tv/tv_collections
 
     overlay_files:
     - remove_overlays: false   # Set this to true to remove all overlays
