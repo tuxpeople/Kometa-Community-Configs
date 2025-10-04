@@ -190,8 +190,8 @@ settings:
   overlay_artwork_quality: 75
   show_unfiltered: false
 plex: # Can be individually specified per library as well; REQUIRED for the script to run
-  url: <<PLEX_URL>>
-  token: <<PLEX_TOKEN>>
+  url: <<PLEXURL>>
+  token: <<PLEXTOKEN>>
   timeout: 60
   db_cache: 4096
   clean_bundles: false
@@ -199,28 +199,28 @@ plex: # Can be individually specified per library as well; REQUIRED for the scri
   optimize: false
   verify_ssl: false
 tmdb: # REQUIRED for the script to run
-  apikey: <<TMDB_API_KEY>>
-  language: <<TMDB_LANGUAGE>>
+  apikey: <<TMDBAPIKEY>>
+  language: <<TMDBLANGUAGE>>
   # tautulli:                        # Can be individually specified per library as well
   #   url: http://192.168.1.12:8181
   #   apikey: ################################
   # cache_expiration: 60
   # region:
   cache_expiration: 60
-  region: <<TMDB_REGION>>
+  region: <<TMDBREGION>>
 github:
-  token: <<GITHUB_TOKEN>>
+  token: <<GITHUBTOKEN>>
 omdb:
-  apikey: <<OMDB_API_KEY>>
+  apikey: <<OMDBAPIKEY>>
   cache_expiration: 60
 mdblist:
-  apikey: <<MDBLIST_API_KEY>>
+  apikey: <<MDBLISTAPIKEY>>
   cache_expiration: 60
 # notifiarr:
 #   apikey: 033eb0db-8669-4fca-bfd0-c30f215ad0c4
 radarr: # Can be individually specified per library as well
-  url: <<RADARR_URL>>
-  token: <<RADARR_TOKEN>>
+  url: <<RADARRURL>>
+  token: <<RADARRTOKEN>>
   add_missing: false
   add_existing: false
   root_folder_path: /data/media/movies/added
@@ -235,8 +235,8 @@ radarr: # Can be individually specified per library as well
   ignore_cache: false
   monitor_existing: false
 sonarr: # Can be individually specified per library as well
-  url: <<SONARR_URL>>
-  token: <<SONARR_TOKEN>>
+  url: <<SONARRURL>>
+  token: <<SONARRTOKEN>>
   add_missing: false
   add_existing: false
   root_folder_path: /data/media/tv/main
@@ -254,15 +254,15 @@ sonarr: # Can be individually specified per library as well
   monitor_existing: false
   language_profile:
 trakt:
-  client_id: <<TRAKT_CLIENT_ID>>
-  client_secret: <<TRAKT_CLIENT_SECRET>>
+  client_id: <<TRAKTCLIENTID>>
+  client_secret: <<TRAKTCLIENTSECRET>>
   pin:
   authorization:
     # everything below is autofilled by the script
-    access_token: <<TRAKT_ACCESS_TOKEN>>
+    access_token: <<TRAKTACCESSTOKEN>>
     token_type: Bearer
     expires_in: 7889237
-    refresh_token: <<TRAKT_REFRESH_TOKEN>>
+    refresh_token: <<TRAKTREFRESHTOKEN>>
     scope: public
     created_at: 1757646035
   force_refresh:
