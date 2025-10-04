@@ -1,29 +1,40 @@
 #######################################
 #          Movie Watchlist            #
 #######################################
-collections:
-  Laura's Watchlist:
-    plex_watchlist: critic_rating.desc
-    collection_order: custom
+# filepath: c:\Users\laura\Kometa\config\movies\movies_watchlist.yml
+templates:
+  Watchlist:
     sync_mode: sync
+    collection_order: custom
     sort_title: "!0001_<<collection_name>>"
     collection_mode: show
     visible_home: true
-  Movies to Watch with Britty:
+
+collections:
+  Top Family Movie Picks:
+    template: Watchlist
+    trakt_list: https://trakt.tv/users/fuschaitea/lists/top-family-movie-picks
+
+  Laura's Watchlist:
+    template: Watchlist
+    plex_watchlist: critic_rating.desc
+
+  Watch with Britty:
+    template: Watchlist
     trakt_list: https://trakt.tv/users/fuschaitea/lists/movies-to-watch-with-britty
-    sync_mode: sync
-    collection_order: custom
-    visible_home: range(01/01-12/31)
-    visible_shared: range(01/01-12/31)
-    sort_title: "!0001_<<collection_name>>"
-  Bec's Best Becommendations:
-    trakt_list: https://trakt.tv/users/fuschaitea/lists/recommendations-by-bec
+
+  Recommendations for Mum:
+    trakt_list: 
+      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-movies-couchmoney-tv
+      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum-tv-shows-couchmoney-tv
+      - https://trakt.tv/users/fuschaitea/lists/recommendations-for-mum 
     sync_mode: sync
     collection_order: custom
     collection_mode: show
-    sort_title: "!0002_<<collection_name>>"
+    sort_title: "!0001_<<collection_name>>"
     visible_home: range(01/01-12/31)
     visible_shared: range(01/01-12/31)
+
   🍿 What Movie Should I Watch?:
       smart_filter:
         sort_by: random
@@ -37,8 +48,10 @@ collections:
       visible_library: true
       visible_home: true
       schedule: weekly(wednesday)
+
   Julia Donaldson:
     smart_filter:
+      sort_by: title.asc
       all:
         writer: tmdb
     tmdb_person: 592851
