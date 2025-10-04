@@ -1,0 +1,18 @@
+# Sensitive files - never commit!
+.env
+*.env
+*.env.*
+
+# Kometa runtime files
+config.cache
+*.cache
+*.log
+logs/
+*.db
+*.sqlite
+overlays/
+UUID
+
+# Kometa backups
+*.bak
+*.backup
